@@ -1,0 +1,24 @@
+# OS X
+.DS_Store
+
+# Ctags
+.tags
+
+# ENSIME
+.ensime
+.ensime_cache/
+
+# IntelliJ
+.idea/
+*.sc
+
+# sbt specific
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Personal convention for where secrets are kept
+secrets/
