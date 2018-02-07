@@ -37,16 +37,16 @@ abstract class ComplexF[S] {
 where `S` is the type of some (to-be) internal state.
 
 Given the `ComplexF` signature, we're able to define a proper `Complex` ADT:
-```
+```scala
 type Complex = ADT[ComplexF]
 ```
-Let's look at `ADT` again with the type variable instantiated:
-```
-// pseudo-scala
+Let's look at `ADT` again with the type variable instantiated to `ComplexF`:
+```scala
+// pseudo code
 type Complex = {
   type S
   def value: S
-  def make: S => Complex[S]
+  def make: S => ComplexF[S]
 }
 ```
 
